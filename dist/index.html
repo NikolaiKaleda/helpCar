@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Angular2 App</title>
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <script src="../dist/lib/es6-shim/es6-shim.min.js"></script>
+    
+    <script src="../dist/lib/zone.js/dist/zone.js"></script>
+    <script src="../dist/lib/reflect-metadata/temp/Reflect.js"></script>
+    <script src="../dist/lib/systemjs/dist/system.src.js"></script>
+    
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err) {console.error(err); });
+    </script>
+    
+</head>
+
+<body>
+    <todo-app>Loading ...</todo-app>
+</body>
+
+</html>

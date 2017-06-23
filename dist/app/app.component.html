@@ -1,0 +1,14 @@
+<h1 class="title">{{ title }}</h1>
+
+
+
+<div *ngIf="todos.length > 0">
+    <div class="items" *ngFor="let item of todos">
+        <p> {{item}} </p>
+    </div>    
+</div>
+
+<div class="inputField">
+    <input type="text" (keyup.enter)="addItem(newItem.value); newItem.value='' " #newItem>
+    <input type="button" (click)="addItem(newItem.value); newItem.value='' ">
+</div>
